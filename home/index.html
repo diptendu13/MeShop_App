@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left pages" style="pointer-events: auto;" id="index">MeShop.</div>
+        <div class="nav-right">
+            <div class="pages" id="home">Home</div>
+            <div class="pages" id="login" style="display: block;">Login</div>
+            <div class="pages" id="signUp" style="display: block;">SignUp</div>
+            <div class="pages" id="myCart" style="display: none;">MyCart</div>
+            <div class="pages" id="profile" style="display: none;">Profile</div>
+        </div>
+    </nav>
+
+    <aside class="sidebar">
+        <div class="sidebar-section">
+            <div class="section-heading">Colors</div>
+            <div class="colors"><input type="checkbox" id="red">Red</div>
+            <div class="colors"><input type="checkbox" id="blue">Blue</div>
+            <div class="colors"><input type="checkbox" id="green">Green</div>
+            <div class="colors"><input type="checkbox" id="black">Black</div>
+            <div class="colors"><input type="checkbox" id="white">White</div>
+        </div>
+        <div class="sidebar-section">
+            <div class="section-heading">Sizes</div>
+            <div class="sizes"><input type="checkbox" id="S">S</div>
+            <div class="sizes"><input type="checkbox" id="M">M</div>
+            <div class="sizes"><input type="checkbox" id="L">L</div>
+            <div class="sizes"><input type="checkbox" id="XL">XL</div>
+            <div class="sizes"><input type="checkbox" id="XXL">XXL</div>
+        </div>
+        <div class="sidebar-section">
+            <div class="section-heading">Minimum Rating</div>
+            <div class="rating"><input type="range" min="0" max="5" value="0" step="1" id="minRating"></div>
+            <div class="rating-range">
+                <div class="markings">0</div>
+                <div class="markings">1</div>
+                <div class="markings">2</div>
+                <div class="markings">3</div>
+                <div class="markings">4</div>
+                <div class="markings">5</div>
+            </div>
+        </div>
+        <div class="sidebar-section">
+            <div class="section-heading">Price Range</div>
+            <div class="prices"><input type="checkbox" id="range-0-24">₹0 to ₹24</div>
+            <div class="prices"><input type="checkbox" id="range-25-49">₹25 to ₹49</div>
+            <div class="prices"><input type="checkbox" id="range-50-74">₹50 to ₹74</div>
+            <div class="prices"><input type="checkbox" id="range-75-99">₹75 to ₹99</div>
+            <div class="prices"><input type="checkbox" id="range-100">₹100 onwards</div>
+        </div>
+        <div class="apply-filter">
+            <button type="button" id="apply-filter-btn">Apply Filter</button>
+        </div>
+    </aside>
+
+    <header class="header">
+        <div class="searchbar">
+            <div id="search-image">
+                <img src="../search_icon.png" alt="search-icon">
+            </div>
+            <input type="text" placeholder="Search" id="search-input">
+        </div>
+        <div class="categories">
+            <div class="category" id="all">All</div>
+            <div class="category" id="men's clothing">Men's</div>
+            <div class="category" id="women's clothing">Women's</div>
+            <div class="category" id="jewelery">Jewellery</div>
+            <div class="category" id="electronics">Electronics</div>
+        </div>
+    </header>
+
+    <main class="home-main">
+        <div class="category-items">
+
+            <div class="category-items-heading">➥ Men's Clothing</div>
+
+            <div class="category-items-cards">
+                <div class="category-items-container">
+
+                    <!-- <div class="category-item">
+
+                        <div class="item-image">
+                            <img src="../demo_item.png" alt="item-image">
+                        </div>
+                        <div class="item-desc">
+                            <div class="desc-common item-title"><span>Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</span></div>
+                            <div class="desc-common item-price-size-wrapper">
+                                <div class="item-price">₹100</div>
+                                <div class="item-size"><span class="sz" id="size-1">S</span><span class="sz" id="size-2">M</span><span class="sz" id="size-3">L</span></div>
+                            </div>
+                            <div class="desc-common item-colors">Colors :<span class="colr" id="color-1"></span><span class="colr" id="color-2"></span><span class="colr" id="color-3"></span></div>
+                            <div class="desc-common item-rating">Rating :<span class="ratingStars">4.3⭐</span><span class="ratingCount">120 ratings</span></div>
+                        </div>
+                        <div class="viewItem">View Item</div>
+
+                    </div> -->
+
+                    <!-- <div class="category-item">Item</div>
+                    <div class="category-item">Item</div>
+                    <div class="category-item">Item</div>
+                    <div class="category-item">Item</div>
+                    <div class="category-item">Item</div>
+                    <div class="category-item">Item</div>
+                    <div class="category-item">Item</div>
+                    <div class="category-item">Item</div>
+                    <div class="category-item">Item</div> -->
+                </div>
+            </div>
+
+        </div>
+        <div class="category-items">
+
+            <div class="category-items-heading">➥ Women's Clothing</div>
+            <div class="category-items-cards">
+                <div class="category-items-container">
+                    <!-- <div class="category-item">Item</div>
+                    <div class="category-item">Item</div>
+                    <div class="category-item">Item</div>
+                    <div class="category-item">Item</div>
+                    <div class="category-item">Item</div> -->
+                </div>
+            </div>
+
+        </div>
+        <div class="category-items">
+
+            <div class="category-items-heading">➥ Jewellery</div>
+            <div class="category-items-cards">
+                <div class="category-items-container">
+                    <!-- <div class="category-item">Item</div>
+                    <div class="category-item">Item</div>
+                    <div class="category-item">Item</div>
+                    <div class="category-item">Item</div>
+                    <div class="category-item">Item</div> -->
+                </div>
+            </div>
+
+        </div>
+        <div class="category-items">
+
+            <div class="category-items-heading">➥ Electronics</div>
+            <div class="category-items-cards">
+                <div class="category-items-container">
+                    <!-- <div class="category-item">Item</div>
+                    <div class="category-item">Item</div>
+                    <div class="category-item">Item</div>
+                    <div class="category-item">Item</div>
+                    <div class="category-item">Item</div> -->
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+
+    <script src="../index.js"></script>
+    <script src="./home.js"></script>
+</body>
+</html>

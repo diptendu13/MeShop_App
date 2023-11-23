@@ -1,0 +1,92 @@
+.profile-main {
+    position: fixed;
+    top: 56px;
+    left: 0;
+    right: 0;
+    padding: 0px 60px;
+}
+
+.profile-main h1 {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.profile-main form {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-main .user-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    /* justify-content: center; */
+}
+
+.profile-main .user-info:first-child {
+    margin-top: -4px;
+    /* border: 5px solid red; */
+}
+
+.user-info label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    /* font-style: italic; */
+    font-size: 19px;
+    margin-right: 10px;
+}
+
+.user-info input {
+    width: 100%;
+    height: 48px;
+    padding: 0px 15px;
+    font-size: 18px;
+    /* font-weight: 500; */
+    border: 1px solid black;
+    /* border-radius: 10px; */
+}
+
+.label-checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    font-size: 12px;
+}
+
+.label-checkbox-container input {
+    width: 12px;
+    height: 12px;
+}
+
+.profile-main .profile-utility-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.profile-common {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    min-width: 150px;
+    padding: 12px 20px;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 28px;
+    /* border: none; */
+    /* align-self: center; */
+}
+
+/* .profile-common:hover {
+    background-color: white;
+    color: black;
+    padding: 11.5px 20px;
+    border: 1px solid black;
+    cursor: pointer;
+} */

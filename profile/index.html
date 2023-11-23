@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfilePage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="./profile.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left pages" style="pointer-events: auto;" id="index">MeShop.</div>
+        <div class="nav-right">
+            <div class="pages" id="home">Home</div>
+            <div class="pages" id="login" style="display: block;">Login</div>
+            <div class="pages" id="signUp" style="display: block;">SignUp</div>
+            <div class="pages" id="myCart" style="display: none;">MyCart</div>
+            <div class="pages" id="profile" style="display: none;">Profile</div>
+        </div>
+    </nav>
+
+    <main class="profile-main">
+        <h1>My Profile</h1>
+        <form>
+            <div class="user-info">
+                <label for="firstName">First Name :</label>
+                <input type="text" id="firstName" placeholder="First Name">
+            </div>
+            <div class="user-info">
+                <label for="lastName">Last Name :</label>
+                <input type="text" id="lastName" placeholder="Last Name">
+            </div>
+            <div class="profile-utility-buttons">
+                <button type="submit" class="profile-common" id="saveInfo-btn">Edit Info</button>
+            </div>
+        </form>
+        <h1>Edit Password</h1>
+        <form>
+            <div class="user-info">
+                <div class="label-checkbox-container">
+                    <label for="oldPassword">Old Password :</label>
+                    <input type="checkbox" id="showOldPass" onclick="showOldPassword()">Show Password
+                </div>
+                <input type="password" id="oldPassword" placeholder="Old Password">
+            </div>
+            <div class="user-info">
+                <div class="label-checkbox-container">
+                    <label for="newPassword">New Password :</label>
+                    <input type="checkbox" id="showNewPass" onclick="showNewPassword()">Show Password
+                </div>
+                <input type="password" id="newPassword" placeholder="New Password">
+            </div>
+            <div class="user-info">
+                <div class="label-checkbox-container">
+                    <label for="confirmNewPassword">Confirm New Password :</label>
+                    <input type="checkbox" id="showConfNewPass" onclick="showConfirmNewPassword()">Show Password
+                </div>
+                <input type="password" id="confirmNewPassword" placeholder="Confirm New Password">
+            </div>
+            <div class="profile-utility-buttons">
+                <button type="submit" class="profile-common" id="editPassword-btn">Edit Password</button>
+                <button type="button" class="profile-common" id="logout-btn">Logout</button>
+            </div>
+        </form>
+    </main>
+
+
+
+    <script src="../index.js"></script>
+    <script src="./profile.js"></script>
+</body>
+</html>

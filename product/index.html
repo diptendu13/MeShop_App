@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="./product.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left pages" style="pointer-events: auto;" id="index">MeShop.</div>
+        <div class="nav-right">
+            <div class="pages" id="home">Home</div>
+            <div class="pages" id="login" style="display: block;">Login</div>
+            <div class="pages" id="signUp" style="display: block;">SignUp</div>
+            <div class="pages" id="myCart" style="display: none;">MyCart</div>
+            <div class="pages" id="profile" style="display: none;">Profile</div>
+        </div>
+    </nav>
+
+    <main class="product-main">
+        <div class="product-container">
+            <!-- <div class="product-left">
+                <div class="product-image">
+                    <img src="../demo_item.png" alt="product-img">
+                </div>
+                <div class="addToCart">Add To Cart</div>
+            </div>
+            <div class="product-right">
+                <div class="product-category">Mens Clothing</div>
+                <div class="product-title">Title</div>
+                <div class="product-desc">Description</div>
+                <div class="product-price">Price</div>
+                <div class="product-sizes"><span class="prod-size-common" id="prod-size-1"></span>Sizes</div>
+                <div class="product-colors">Colors</div>
+                <div class="product-ratings">Ratings</div>
+            </div> -->
+        </div>
+        <div class="category-item-overlay deactivate">
+            <div class="message-wrapper">
+                <h3 class="message-wrapper-heading">Remove Item</h3>
+                <div class="message-wrapper-caption">Are you sure you want to remove this item?</div>
+                <div class="cancel-remove-container">
+                    <div class="overlay-btns" id="cancel-btn">Cancel</div>
+                    <div class="overlay-btns" id="remove-btn">Remove</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+    <script src="../index.js"></script>
+    <script src="./product.js"></script>
+</body>
+</html>

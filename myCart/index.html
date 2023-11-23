@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCartPage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="./myCart.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left pages" id="index">MeShop.</div>
+        <div class="nav-right">
+            <div class="pages" id="home">Home</div>
+            <div class="pages" id="login">Login</div>
+            <div class="pages" id="signUp">SignUp</div>
+            <div class="pages" id="myCart">MyCart</div>
+            <div class="pages" id="profile">Profile</div>
+        </div>
+    </nav>
+
+    <main class="myCart-main">
+        <h1 class="myCart-h1">My Cart</h1>
+        <div class="myCart-content">
+            <div class="myCart-items">
+                <div class="myCart-items-container"></div>
+            </div>
+            <div class="checkout-list-container">
+                <div class="checkout-upper">
+                    <h3 class="checkout-heading">Checkout List</h3>
+                    <div id="checkout-list">
+                        <!-- <div class="checkout-list-item" id=""><span class="checkout-item-quantity">2</span><span class="checkout-item-title">Title</span><span class="checkout-item-price">Price</span></div> -->
+                    </div>
+                </div>
+                <div class="checkout-lower">
+                    <div class="checkout-total">
+                        <span class="checkout-total-caption">Total</span><span id="checkout-total-amount">Amount</span>
+                    </div>
+                    <div id="checkout-btn">Click to Checkout</div>
+                </div>
+            </div>
+        </div>
+        <div class="category-item-overlay deactivate">
+            <div class="message-wrapper">
+                <h3 class="message-wrapper-heading">Remove Item</h3>
+                <div class="message-wrapper-caption">Are you sure you want to remove this item?</div>
+                <div class="cancel-remove-container">
+                    <div class="overlay-btns" id="cancel-btn">Cancel</div>
+                    <div class="overlay-btns" id="remove-btn">Remove</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="../index.js"></script>
+    <script src="./myCart.js"></script>
+</body>
+</html>
